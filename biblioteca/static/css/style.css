@@ -2,26 +2,257 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.barra-navegacion{
+body {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 40px;
     background-color: #ffffff;
+    border-bottom: 2px solid #f0f0f0;
 }
+
 .logo {
     display: flex;
     align-items: center;
-    width: 60px;
-    padding: 10px;
-    margin-left: 10px;
-}
-.logotipo{
-    width: 120px;
-}
-.titulo{
     font-size: 30px;
-    padding: 20px;
+    font-weight: 800;
+}
+
+.img-logo {
+    width: 75px;
+    height: auto;
+    margin-right: 10px;
+}
+.parrafo-na{
+    display: flex;
+    flex-direction: column;
+}
+.color-azul {
+    color: #2b5c9c;
+}
+
+.color-negro {
+    color: #111111;
+    margin-right: 5px;
+}
+
+.controles {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.controles input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 220px;
+}
+
+.btn-login {
+    background-color: #2b5c9c;
+    color: #ffffff;
+    border: none;
+    padding: 9px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.carrito {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 14px;
+    gap: 6px;
+    font-weight: bold;
+}
+
+.img-libro {
+    width: 49px;
+    height: auto;
+}
+
+.menu {
+    background-color: #e3ebf4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 20px auto 30px auto;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.item-menu {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 15px 0;
+    font-size: 14px;
+    color: #333333;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    font-weight: bold;
+}
+
+.img-menu {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+main {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.seccion-gris {
+    flex: 2;
+    background-color: #e9e9e9;
+    display: flex;
+    padding: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.texto-promo {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.texto-promo h2 {
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #111111;
+    margin-bottom: 15px;
+}
+
+.linea-decorativa {
+    width: 40px;
+    height: 4px;
+    background-color: #2b5c9c;
+    margin-bottom: 20px;
+}
+
+.texto-promo p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #444444;
+}
+
+.contenedor-media {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+}
+
+#imagen-principal {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #333;
+    cursor: pointer;
+}
+
+.subtitulo-media {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555555;
+    font-weight: normal;
+}
+
+.seccion-recomendados {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion-recomendados h3 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.tarjeta {
+    display: flex;
+    align-items: center;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+}
+
+.img-recomendado {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 1px solid #999999;
+    margin-right: 15px;
+}
+
+.info-tarjeta {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detalle-libro {
+    display: flex;
+    flex-direction: column;
+}
+
+.detalle-libro strong {
+    font-size: 14px;
+    font-weight: bold;
+    color: #111111;
+}
+
+.detalle-libro .autor {
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 4px;
+}
+
+.detalle-libro a {
+    font-size: 12px;
+    color: #2b5c9c;
+}
+
+.detalle-libro a:hover {
+    text-decoration: none;
+}
+
+.btn-mas {
+    background-color: #0c2b5e;
+    color: #ffffff;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

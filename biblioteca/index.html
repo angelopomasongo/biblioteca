@@ -8,21 +8,107 @@
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
-    <header class="barra-navegacion">
-            <div class="logo">
-                <img src="static/images/logo.jpg" alt="Logo" class="logotipo" >
-                <h1 class="titulo">Biblioteca <span>Horizonte</span></h1>
+
+    <header>
+        <div class="logo">
+            <img src="static/images/logo.jpg" alt="Logo" class="img-logo">
+            <div class="parrafo-nav">
+                <p class="color-negro">Biblioteca</p>
+                <p class="color-azul">Horizonte</p>
             </div>
-            <div>
-                <input type="email" placeholder="email">
-                <button>Ingresar</button>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p>Elementos Seleccionados:</p>
-                <p>0</p>
-            </div>
+        </div>
+        <div class="controles">
+            <input type="text" id="correo" placeholder="Email">
+            <button class="btn-login" onclick="mostrarCorreo()">Ingresar</button>
+            <span class="carrito">
+                <img src="static/images/libros.jpg" alt="Libros" class="img-libro"> 
+                Libros seleccionados: <span id="num-carrito">0</span>
+            </span>
+        </div>
     </header>
-    
+
+    <nav class="menu">
+        <div class="item-menu">
+            <img src="static/images/novela.jpg" alt="Novelas" class="img-menu">
+            <p>Novelas</p>
+        </div>
+        <div class="item-menu">
+            <img src="static/images/ciencia.png" alt="Ciencia" class="img-menu">
+            <p>Ciencia</p>
+        </div>
+        <div class="item-menu">
+            <img src="static/images/historia.jpg" alt="Historia" class="img-menu">
+            <p>Historia</p>
+        </div>
+        <div class="item-menu">
+            <img src="static/images/tecnologia.jpg" alt="Tecnología" class="img-menu">
+            <p>Tecnología</p>
+        </div>
+        <div class="item-menu">
+            <img src="static/images/arte.jpg" alt="Arte" class="img-menu">
+            <p>Arte</p>
+        </div>
+        <div class="item-menu">
+            <img src="static/images/oso.png" alt="Infantil" class="img-menu">
+            <p>Infantil</p>
+        </div>
+    </nav>
+
+    <main>
+        <div class="seccion-gris">
+            <div class="texto-promo">
+                <h2>Descubre<br>nuevas historias</h2>
+                <div class="linea-decorativa"></div>
+                <p>Explora nuestra biblioteca virtual y encuentra libros para todos los gustos. Conocimiento, aventura y mucho más al alcance de un clic.</p>
+            </div>
+
+            <div class="contenedor-media">
+                <img id="imagen-principal" src="image_bd9403.jpg" alt="Video Biblioteca" onmouseover="cambiarImagen()" onmouseout="imagenOriginal()">
+                <p class="subtitulo-media">Conoce la Biblioteca Horizonte</p>
+            </div>
+        </div>
+
+        <div class="seccion-recomendados">
+            <h3>Libros recomendados:</h3>
+
+            <div class="tarjeta">
+                <img src="static/images/cien años de soledad.jpg" alt="Cien años de soledad" class="img-recomendado">
+                <div class="info-tarjeta">
+                    <div class="detalle-libro">
+                        <strong>Cien años de soledad</strong>
+                        <span class="autor">Gabriel García Márquez</span>
+                        <a href="#">Ver más...</a>
+                    </div>
+                    <button class="btn-mas" onclick="sumarCarrito()">+</button>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <img src="static/images/sapiens.jpg" alt="Sapiens" class="img-recomendado">
+                <div class="info-tarjeta">
+                    <div class="detalle-libro">
+                        <strong>Sapiens</strong>
+                        <span class="autor">Yuval Noah Harari</span>
+                        <a href="#">Ver más...</a>
+                    </div>
+                    <button class="btn-mas" onclick="sumarCarrito()">+</button>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <img src="static/images/el principito.jpg" alt="El principito" class="img-recomendado">
+                <div class="info-tarjeta">
+                    <div class="detalle-libro">
+                        <strong>El principito</strong>
+                        <span class="autor">Antoine de Saint-Exupéry</span>
+                        <a href="#">Ver más...</a>
+                    </div>
+                    <button class="btn-mas" onclick="sumarCarrito()">+</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="static/js/script.js"></script>
 </body>
 </html>
