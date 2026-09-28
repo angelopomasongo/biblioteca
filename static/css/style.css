@@ -31,10 +31,12 @@ header {
     height: auto;
     margin-right: 10px;
 }
-.parrafo-na{
+
+.parrafo-nav {
     display: flex;
     flex-direction: column;
 }
+
 .color-azul {
     color: #2b5c9c;
 }
@@ -164,7 +166,7 @@ main {
     flex-direction: column;
 }
 
-#imagen-principal {
+#imagen-principal, #video-principal {
     width: 100%;
     height: auto;
     object-fit: cover;
